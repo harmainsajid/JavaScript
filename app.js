@@ -307,3 +307,28 @@
 // alert(b); // 3
 // alert(c); // 6
 
+
+// // STRING CONCATENATION
+// // Concatenating string
+// var firstName = "Abraham";
+// var lastName = "aLincoln";
+// //concatenate firstName, space character and lastName
+// var fullName = firstName + " " + lastName;
+// alert(fullName);
+
+// // Concatenating strings and numbers
+// var a = "6" + 2; // "62"
+// var b = 3 + "6"; // "36"
+// var c = "Hello " + 2; // "Hello 2"
+// var d = 2 + "Hello "; // "2 Hello"
+// var e = "Hello "+ 3 + 4; // "Hello 34"
+// var f = 3 + 4 + "Hello "; // "7Hello"
+// var g = "Hello "+ (3 + 4); // "Hello 7"
+
+// console.log(a);
+// console.log(b);
+// console.log(c);
+// console.log(d);
+// console.log(e);
+// console.log(f);
+// console.log(g);
