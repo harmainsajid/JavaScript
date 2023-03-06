@@ -1,6 +1,4 @@
-
 // // JAVASCRIPT BY ZEESHAN HANIF
-
 
 // // DISPLAYING OUTPUT
 // // ALERT
@@ -53,7 +51,7 @@
 // var a = 9;
 // var b = 6;
 // var c = a + b;
-// console.log(c); 
+// console.log(c);
 
 // // BOOLEAN
 // var isFeePaid = true;
@@ -72,7 +70,7 @@
 // console.log(name)
 
 // // NULL
-// //null is an object 
+// //null is an object
 // var city = null; //it is not an empty string
 // console.log(city);
 
@@ -142,7 +140,6 @@
 // // var my?info = 45;
 // // var my*info = 45;Reserved Keywords
 
-
 // // COMMENTS
 // // SINGLE LINE COMMENT
 // // Declare and initialize variable
@@ -162,7 +159,6 @@
 // // EX
 // // var var = 2; (reserved keywords cannot be used as variable names)
 // // var for =4;
-
 
 // // CASE SENSATIVE
 // var rose = "Hello";
@@ -197,7 +193,6 @@
 // console.log(g);
 // console.log(h);
 
-
 // // ASSIGNMENT OPERATOR
 // var a = 5; // equals = is assignment operator
 // a = a + 2; // Assign 7 in variable a
@@ -222,7 +217,6 @@
 // console.log(b);
 // console.log(c);
 // console.log(d);
-
 
 // // INCREMENT AND DECREMENT OPERATOR
 // // ++ increment
@@ -272,7 +266,6 @@
 // console.log(age);//Result 11
 // console.log(newAge);//Result 12 , see the difference
 
-
 // // Example 1
 // var a = 4;
 // var b = 2;
@@ -307,7 +300,6 @@
 // alert(b); // 3
 // alert(c); // 6
 
-
 // // STRING CONCATENATION
 // // Concatenating string
 // var firstName = "Abraham";
@@ -332,3 +324,125 @@
 // console.log(e);
 // console.log(f);
 // console.log(g);
+
+// //PROMPT AND PARSING STRING
+// // Prompt() / window.prompt()
+// var question = "What is your name?";
+// var defaultAnswer = "John";
+// var name = prompt(question, defaultAnswer);
+// console.log("Name = "+ name);
+
+// var question = "What is your age?";
+// var age = prompt(question);// Assuming input 12
+// var newAge = age + 5; // It will concatenate
+// console.log("New Age = "+ newAge); //result 125
+
+// //Convert string to integer
+// var value1 = "3";
+// var value2 = "5";
+// var value3 = value1+value2;
+// console.log(value3);// result, 35
+
+// //Assuming we will provide value 5 in input
+// var age = prompt("What is your age");
+// var num = 4;
+// var sum = age + num;
+// console.log(sum); // result, 54
+
+// var age = prompt("What is your age?"); //input 5
+// var num = 4;
+// var sum = parseInt(age) + num;
+// console.log(sum); //result 9
+
+// var age = prompt("What is your age");//input abc
+// var num = 4;
+// var sum = parseInt(age) + num;
+// console.log(sum); // result, NaN
+
+// //Convert string to decimal
+// var age = prompt("What is your age?"); //input 5.5
+// var num =4;
+// var sum =parseFloat(age) + num;
+// console.log(sum); // result 9.5
+
+// //Convert string to number
+// var age = prompt("What is your age");//input 5.5
+// var num = 4;
+// var sum = Number(age) + num;
+// console.log(sum); // result, 9.5
+
+// var a = Number(true);//returns 1
+// var b = Number(false);//returns 0
+// var c = Number("999");//returns 999
+// var d = Number("999 888");//returns NAN
+// var e = Number("Hello");//returns NAN
+
+// console.log(a);
+// console.log(b);
+// console.log(c);
+// console.log(d);
+// console.log(e);
+
+// // COMPARISION OPERATOR
+// var a = 3;
+// console.log(a == 6); //false
+// console.log(a === 6); //false
+// console.log(a != 6); //true
+// console.log(a !== 6); //true
+// console.log(a > 6); //false
+// console.log(a < 6); //true
+// console.log(a >= 6); //false
+// console.log(a <= 6); //true
+
+// var a = 3;
+// console.log(a == 3); //return true
+// console.log(a == "3"); //return true
+// console.log(a == 6); //return false
+// console.log(a === 3); //return true
+// console.log(a === "3"); //return false
+// console.log(a === 6); //return false
+
+// // LOGICAL OPERATORS
+// // Short-circuit Logical Operators
+// // && (AND)
+// // || (OR)
+// // ! (NOT)
+
+// // && Logical Operator
+// alert( true && true ); // true
+// alert( false && true ); // false
+// alert( true && false ); // false
+// alert( false && false ); // false
+
+// var a = 60;
+// var b = a > 50 && a < 70;
+// alert(b); // return true
+// var c = 80;
+// var d = c > 50 && c < 70;
+// alert(d); // return false
+
+// // || Logical Operator
+// alert(true || true); // true
+// alert(false || true); // true
+// alert(true || false); // true
+// alert(false || false); // false
+
+// var a = 60;
+// var b = a < 50 || a > 70;
+// alert(b); // return false
+// var c = 80;
+// var d = c < 50 || c > 70;
+// alert(d); // return true
+
+// // ! Logical Operator
+// alert(!true); // false
+// alert(!false); // true
+// var a = 60;
+// var b = !(a < 50);
+// alert(b); // return true
+// var c = 80;
+// var d = !(c > 50);
+// alert(d); // return false
+
+// alert( !1 ); // false
+// alert( !0); // true
