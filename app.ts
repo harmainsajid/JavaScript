@@ -720,7 +720,6 @@
 
 // Nested Loops
 // 1. If a loop exists inside the body of another loop, it's called nested loop.
-// for (var i = 0; i < 3; i++){
 // for (var i = 0; i < 3; i++) {
 //   for (var j = 0; j < 2; j++) {
 //     console.log("I = " + i + " J = " + j);
@@ -865,3 +864,86 @@
 // foods.push(prompt("Enter third food item"));
 // console.log(foods);
 // console.log(foods[1]);
+
+// Random Access
+// let foods: string[] = ["Pizza", "Burger", "Snacks"];
+// console.log(foods[1]); // Burger
+// foods[1] = "Sandwich"; // Updating existing element
+// console.log(foods[1]); // Sandwich
+
+// STACK (LIFO)
+// Stack (Last in First out)
+// let foods: string[] = [];
+// foods.push("Pizza");
+// foods.push("Burger");
+// foods.push("Snacks");
+// console.log(foods);
+// console.log("Length " + foods.length); // Length 3
+// let a1: string | undefined = foods.pop(); // Remove Snacks from array
+// let a2: string | undefined = foods.pop(); // Remove Burger from array
+// console.log(foods);
+// console.log("Length " + foods.length); // Length 1
+
+// QUEUE (FIFO)
+// Queue (First in First out)
+// let foods: string[] = [];
+// foods.push("Pizza");
+// foods.push("Burger");
+// foods.push("Snacks");
+// console.log("Length " + foods.length); // Length 3
+// console.log(foods.shift()); // Remove Pizza from array
+// console.log(foods.shift()); // Remove Burger from array
+// console.log("Length " + foods.length); // Length 1
+
+// Unshift function
+// let foods: string[] = [];
+// foods.push("Pizza");
+// foods.push("Burger");
+// foods.push("Snacks");
+// console.log("Length " + foods.length);
+// console.log(foods[0]);
+// foods.unshift("Sandwhich");
+// console.log(foods[0]);
+// console.log(foods[1]);
+
+// Iterating array with Loops
+// let foods: string[] = ["Pizza", "Burger", "Juice"];
+// for (let i = 0; i < foods.length; i++) {
+//   console.log(foods[i]);
+// }
+
+// Through for loops array can be changed or update
+// let arr: number[] = [2, 4, 6, 8, 10];
+// for (let i = 0; i < arr.length; i++) {
+//   arr[i] = arr[i] * 2;
+// }
+
+// for (let j = 0; j < arr.length; j++) {
+//   console.log(arr[j]);
+// }
+
+// let arr: number[] = [];
+// for (let i = 0; i < 5; i++) {
+//   arr[i] = i * 6;
+// }
+
+// for (let j = 0; j < arr.length; j++) {
+//   console.log(arr[j]);
+// }
+
+// TASK
+// let arr = [];
+// for (let i = 0; i < 5; i++) {
+//   arr[i] = prompt("Enter number here!");
+// }
+// console.log(arr);
+
+// let myinputarr = [];
+// let size = 5; // Array size
+
+// for (let a = 0; a < size; a++) {
+//   myinputarr[a] = prompt("Enter Array Element " + (a + 1));
+// }
+
+// //user enter array
+// console.log(myinputarr);
